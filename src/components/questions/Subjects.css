@@ -1,0 +1,50 @@
+.subjects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .subject-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .subject-card {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .mobile-questions {
+    display: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+  #questions{
+    color:black;
+  }
+  
+  /* 🟢 For Mobile Devices: Show questions below selected subject */
+  @media (max-width: 768px) {
+    .mobile-questions {
+      display: block; /* Show questions when toggled */
+    }
+  
+    .question-box {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* 🖥️ On Large Screens: Keep default layout */
+  @media (min-width: 769px) {
+    .desktop-questions {
+      display: block;
+    }
+  }
+  

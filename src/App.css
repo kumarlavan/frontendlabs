@@ -1,0 +1,22 @@
+
+
+.gradient-primary {
+    background: linear-gradient(135deg, #0f8a9f, #3b2f5a, #5a9fdb);
+  }
+  
+  .gradient-secondary {
+    background: linear-gradient(135deg, #a76ba0, #3b2f5a,#539ccd);
+  }
+  
+  .gradient-orange {
+    background: linear-gradient(to right, #5a3a5f, #c65a41,#7e4781);
+  }
+  .gradient-blue {
+    background: linear-gradient(to right, #4d83b3,#915990, #3b2f5a );
+  }
+  .gradient-yellow {
+    background: linear-gradient(to right, #764071,#6946aa ,#375e78,#7b5b9e);
+  }
+  .gradient-skyblue {
+    background: linear-gradient(to right, #55c6da,#623c5c, #0f8a9f,#80448a);
+  }

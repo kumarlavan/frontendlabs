@@ -1,0 +1,53 @@
+.labs{
+    color: #614dd4;
+    text-shadow: 2px 2px 8px #610393, 4px 4px 12px #350294;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+.gradient-text {
+    background: linear-gradient(90deg , #b02c05f2,#067ed3, #e200b5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+/* --------------------- */
+/* right nav css */
+
+.animated-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .animated-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(45deg, #f92707e7, #41025e,#e200b5);
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+  }
+  
+  .animated-link:hover {
+    color: #033598;
+  }
+  
+  .animated-link:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Click Effect */
+  .animated-link:active {
+    transform: scale(0.95);
+  }
+
+  /* ___________dark and light theme________ */
+  

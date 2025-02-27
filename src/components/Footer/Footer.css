@@ -1,0 +1,86 @@
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  text-align: center;
+  animation: snake 4s linear infinite;
+  position: relative;
+
+}
+
+.footer .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 8px 0;
+
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+ 
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      grid-template-rows: 1fr 1fr;
+  }
+
+
+}
+
+
+  @keyframes snake {
+    0% {
+      border-top: 5px solid lightgreen;
+      border-top: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+    25% {
+      border-top: 5px solid transparent;
+      border-right: 5px solid rgb(6, 228, 6);
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+    50% {
+      border-top: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid rgb(18, 197, 18);
+      border-left: 5px solid transparent;
+    }
+    75% {
+      border-top: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid rgb(12, 234, 12);
+    }
+    100% {
+      border-top: 5px solid transparent;
+      /* border-top: 5px solid rgb(13, 238, 13); */
+      border-right: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid transparent;
+    }
+  }
