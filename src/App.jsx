@@ -13,7 +13,8 @@ import ReactQuestion from './components/questions/ReactQuestions/ReactQuestion'
 import JavaScriptQuestion from './components/questions/JavascriptQuestions/JavascriptQuestion'
 import Team from './components/About/Team'
 import LearnMore from './components/About/LearnMore'
-
+import PrivateComp from './components/privatecomponents/PrivateComp'
+import ScrollToTop from './components/helpersHOC/ScrollToTop'
 function App() {
   const route=createBrowserRouter([
     {
@@ -62,11 +63,11 @@ function App() {
         
         {
           path:"/subjects",
-          element:<Subjects/>,
+          element:<ScrollToTop><Subjects/></ScrollToTop>,
           children:[
             {
               path:"/subjects/html",
-              element:<HtmlQuestion/>
+              element: <HtmlQuestion/>
             },
             {
               path:"/subjects/css",
@@ -74,7 +75,9 @@ function App() {
             },
             {
               path:"/subjects/react",
-              element:<ReactQuestion/>
+              element:<PrivateComp>
+                <ReactQuestion/>
+              </PrivateComp>
             },
             {
               path:"/subjects/javascript",
