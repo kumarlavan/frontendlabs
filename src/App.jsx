@@ -24,21 +24,6 @@ function App() {
         {
           path:"/",
           element:<Home/>,
-          // children:[
-          //   {
-          //     path:"/about",
-          //     element:<About/>
-          //   },
-          //   {
-          //     path:"/questions",
-          //     element:<Questions/>
-          //   },
-          //   {
-          //     path:"/contact",
-          //     element:<Contact/>
-          //   }
-           
-          // ]
         },
         {
           path:"/about",
